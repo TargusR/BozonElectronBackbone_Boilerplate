@@ -1,6 +1,6 @@
 # Bozon Electron Backbone Boiler plate
 
-> This Boilerplate is the start up template to develope projects based in backbone and electron (chromium-nodejs desktop apps) upon Bozon project wizard.
+> This Boilerplate is a start-up template to develope projects based in backbone and electron (chromium-nodejs desktop apps) upon Bozon project wizard.
 
 ## Dev
 
