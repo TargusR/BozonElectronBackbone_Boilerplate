@@ -1,0 +1,1 @@
+Variables, mixins and other common resources for the project

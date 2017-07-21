@@ -1,0 +1,48 @@
+/////////////////////////////
+//  Icon size Definitions  //
+/////////////////////////////
+
+$icon-size--sm: 20px;
+$icon-size--md: 25px;
+$icon-size--lg: 30px;
+
+@mixin iconize($color:"$white", $size:"md") {
+  @include fa-icon();
+  color: $color;
+  text-align: center;
+  @if $size == "sm" {
+    width: $icon-size--sm;
+    height: $icon-size--sm;
+    line-height: $icon-size--sm;
+    font-size: $icon-size--sm;
+  } @else if $size == "md" {
+    width: $icon-size--md;
+    height: $icon-size--md;
+    line-height: $icon-size--md;
+    font-size: $icon-size--md;
+  } @else if $size == "lg" {
+    width: $icon-size--lg;
+    height: $icon-size--lg;
+    line-height: $icon-size--lg;
+    font-size: $icon-size--lg;
+  }
+}
+
+@mixin iconSizeChange($newsize:"md") {
+  @if $newsize == "sm" {
+    width: $icon-size--sm;
+    height: $icon-size--sm;
+    line-height: $icon-size--sm;
+    font-size: $icon-size--sm;
+  } @else if $newsize == "md" {
+    width: $icon-size--md;
+    height: $icon-size--md;
+    line-height: $icon-size--md;
+    font-size: $icon-size--md;
+  } @else if $newsize == "lg" {
+    width: $icon-size--lg;
+    height: $icon-size--lg;
+    line-height: $icon-size--lg;
+    font-size: $icon-size--lg;
+  }
+}

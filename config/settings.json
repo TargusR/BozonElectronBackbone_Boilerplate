@@ -1,8 +1,8 @@
 {
-  "width": 1920,
-  "height": 1080,
+  "width": 900,
+  "height": 600,
   "alwaysontop": false,
-  "resizable": false,
-  "fullscreen": true,
+  "resizable": true,
+  "fullscreen": false,
   "kiosk": false,
 }

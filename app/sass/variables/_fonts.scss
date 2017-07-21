@@ -1,0 +1,57 @@
+/////////////////////////////
+//  Font Mixins and Assets //
+/////////////////////////////
+
+@mixin fontFace($family, $path, $name, $weight, $style){
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}#{$name}.woff') format('woff'),
+         url('#{$path}#{$name}.ttf') format('truetype');
+    @if $weight != normal {
+      font-weight: $weight;
+    }
+    @if $style != normal {
+      font-style: $style;
+    }
+  }
+}
+
+@mixin Bold() {
+  font-weight: bold;
+  font-weight: 800;
+}
+
+@mixin boldItalic() {
+  font-weight: bold;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@mixin italic() {
+  font-style: italic;
+}
+
+@mixin light() {
+  font-weight: lighter;
+  font-weight: 300;
+}
+
+@mixin lightItalic() {
+  font-weight: lighter;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin fontStyle($type) {
+  @if $type == bold {
+    @include bold();
+  } @else if $type == bolditalic {
+    @include boldItalic();
+  } @else if $type == italic {
+    @include italic();
+  } @else if $type == light {
+    @include light();
+  } @else if $type == lightitalic {
+    @include lightItalic();
+  }
+}

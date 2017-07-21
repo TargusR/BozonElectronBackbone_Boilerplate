@@ -1,0 +1,23 @@
+/////////////////////////////////
+//  Main Template Header File  //
+/////////////////////////////////
+
+@charset "UTF-8";
+
+// Mixins and Variables Definitions
+@import "variables/**/*";
+
+// Base styles to clean or normalize Markup
+@import "base/**/*";
+
+// Global layout elements
+@import "layout/**/*";
+
+// Project semantic Components
+@import "components/**/*";
+
+// Project Components global states
+@import "state/**/*";
+
+// Customization layer to Project Components
+// @import "theme/**/*";
